@@ -6,7 +6,22 @@
     <title>Valarum Karur</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <script>
+document.addEventListener("DOMContentLoaded", function () {
+    // Select elements
+    const hamburgerMenu = document.querySelector(".hamburger-menu");
+    const navMenu = document.querySelector(".nav-menu ul");
 
+    // Toggle 'active' class on menu
+    hamburgerMenu.addEventListener("click", function () {
+        if (navMenu) {
+            navMenu.classList.toggle("active");
+        }
+    });
+});
+
+
+    </script>
 </head>
 <body>
     <header class="top-bar">
@@ -24,25 +39,30 @@
             </div>
         </div>
     </header>
-    <header class="main-header" >
-        <div class="container" >
+    <header class="main-header">
+        <div class="container">
             <div class="logo">
-                <a href="#"><img src="logo2.png" alt="Logo" ></a>
+                <a href="#"><img src="logo2.png" alt="Logo"></a>
             </div>
+            <!-- Hamburger Menu Button -->
+            <button class="hamburger-menu"><i class="fas fa-bars"></i></button>
             <nav class="nav-menu">
                 <ul>
-                    <li><a href="#home">Home</a></li>
+                    <li ><a href="#home">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="causes.html">Causes</a></li>
-                    <li><a href="community.html">Community</a></li>
-
+                    <li style="margin-right: 220px;"><a href="community.html">Community</a></li>
+                    <div class="cta-buttons">
+                        <a href="#donate" class="btn btn-primary">Join Our Team</a>
+                    </div>
                 </ul>
             </nav>
-            <div class="cta-buttons">
-                <a href="#donate" class="btn btn-primary">Join Our Team</a>
-            </div>
+            
+                </ul>
+            </nav>
         </div>
     </header>
+    
     
 
     <!-- Banner -->
